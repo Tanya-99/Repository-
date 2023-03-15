@@ -9,7 +9,7 @@ on:
 
 # jobs запускаются параллельно, если не указана последовательность
 jobs:
-  # Название jobs вы можете назвать как угодно
+  # Название job вы можете назвать как угодно
   my_build_job:
     # Операционная система в виртуальной машине, в которой запускаются процессы
     runs-on: ubuntu-latest
@@ -31,5 +31,6 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          
       - name: Run JS file for test
         run: node js/script.js
